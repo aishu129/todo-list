@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+    margin: 50px;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+header h4 {
+    display: inline;
+    background: yellow;
+    
+}
+
+#new-task-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input , button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex-grow: 1;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    border: 2px solid black;
+}
+
+#new-task-input::placeholder {
+    color: pink;
+}
+
+#new-task-submit {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 70%;
+    background-color: black;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#new-task-submit:hover{
+    color: aliceblue;
+    background-color: red;
+    cursor: pointer;
+}
+
+#new-task-submit:active{
+    color: aliceblue;
+    background-color: green;
+    cursor: pointer;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+
+.task-list {
+    padding: 1rem;
+}
+
+
+#tasks{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#tasks .taskheading {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    
+}
+
+#tasks .taskheading .content{
+    display: flex;
+    flex-grow: 1;
+}
+
+#tasks .taskheading .content .text{
+    color: brown;
+    font-size: 1rem;
+}
+
+
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+#tasks .task .content {
+    display: flex;
+    flex-grow: 1;
+}
+
+#tasks .task .content .text{
+    color: brown;
+    font-size: 1rem;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color: orange;
+    font-size: 1rem;
+}
+
+
+#tasks .task actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button {
+    cursor: pointer;
+    margin: 0.05rem;
+
+}
+
+
+.task .actions .edit {
+    border: 2px solid blue;
+    margin-right: 15px;
+    
+
+}
+
+.task .actions .edit:hover {
+    background-color: aquamarine;
+}
+
+.task .actions .delete {
+    border: 2px solid grey;
+
+}
+
+.task .actions .delete:hover {
+    background-color: orange;
+}
+
+.taskheading .actions .edit {
+    border: 2px solid blue;
+    margin-right: 5px;
+
+}
+
+.taskheading .actions .delete {
+    border: 2px solid grey;
+
+}
