@@ -13,6 +13,12 @@
         <h4>Do it now.</h4>
         <form id="new-task-form">
             <input type="text" id="new-task-input" placeholder="Enter your Task">
+            <select id="status" class="status" required>
+                <option value="todo">Select Status</option>
+                <option value="todo">Todo</option>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+            </select>
             <input type="submit" id="new-task-submit" value="Add Task">
         </form>
     </header>
@@ -34,6 +40,11 @@
                 <!-- <div class="task">
                     <div class="content">
                         <input type="text" class="text" value="my task 1">
+                        <select id="status" class="status" required>
+                            <option value="todo">Todo</option>
+                            <option value="pending">Pending</option>
+                            <option value="completed">Completed</option>
+                        </select>
                     </div>
                     <div class="actions">
                         <button class="edit">✏️</button>
